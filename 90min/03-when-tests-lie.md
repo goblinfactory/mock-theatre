@@ -13,7 +13,7 @@ Spot the symptoms of green tests that do not protect real behavior.
 
 ## Quick demo (failure mode)
 
-Show a test that does not assert the outcome:
+Example test that does not assert the outcome:
 
 ```csharp
 var inventory = new Mock<IInventory>();
@@ -24,8 +24,8 @@ service.Place(order);
 inventory.Verify(i => i.Reserve(order.Id), Times.Once);
 ```
 
-Call out that this passes even if `Place` returns the wrong result, the
-confirmation email is never sent, or the wrong order ID is passed in.
+Note that this passes even if `Place` returns the wrong result, the confirmation
+email is never sent, or the wrong order ID is passed in.
 
 ## 2-minute prompt
 
@@ -34,7 +34,7 @@ feature broke?"
 
 ## Facilitation note (invite SMEs)
 
-Ask a SME to describe the last regression that slipped through green tests and
-what the tests were missing.
+A SME story about the last regression that slipped through green tests can
+highlight what the tests were missing.
 
 [Back to index](index.md)

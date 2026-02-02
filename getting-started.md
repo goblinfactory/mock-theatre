@@ -3,8 +3,6 @@
 This repo contains facilitator notes for the unconference session:
 "Mock Theatre: when green tests mean nothing".
 
-![mock theatre](./img/mock-theatre.png)
-
 Start here:
 
 - [90-minute version](90min/index.md)

@@ -1,24 +1,24 @@
-# 01. The one-minute anti-pattern
+# 01. Five-minute intro
 
 ## Objective
 
-In one minute, show a green test that proves nothing.
+Introduce mock theatre in five minutes with five essential ideas.
 
-## Quick demo
+## Five key topics (about one minute each)
 
-```csharp
-[Fact]
-public void FooFile_contains_exactly_these_25_lines()
-{
-    var expected = new[] { "using System;", "...", "// line 25" };
-    var actual = File.ReadAllLines("Foo.cs");
-    Assert.Equal(expected, actual);
-}
-```
+1. **Mock theatre (definition)**: tests that verify a script of interactions
+   rather than useful outcomes.
+2. **Why green tests lie**: a suite can be green while user-visible behavior is
+   broken or missing.
+3. **Chicago vs London TDD**: real collaborators and state-based checks versus
+   mocks and interaction-based checks; the risk is defaulting to mocks everywhere.
+4. **Test levels and risk**: unit, component, integration, functional; the right
+   level depends on the risk being managed and the cost of feedback.
+5. **Useless test anti-pattern**: asserting implementation text (or exact
+   interaction scripts) gives false confidence and discourages safe refactoring.
 
-## The takeaway
+## One-sentence takeaway
 
-Green tests that assert implementation text do not protect behavior. Prefer tests
-that reflect user-visible outcomes.
+Green tests are only useful when they protect behavior that matters to users.
 
 [Back to index](index.md)

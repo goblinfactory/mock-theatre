@@ -68,7 +68,7 @@ Assert.Equal(108m, await response.Content.ReadFromJsonAsync<decimal>());
 
 ## Facilitation note (invite SMEs)
 
-Invite a SME to share how they decide whether a test should be unit, component,
+A SME share on how they decide whether a test should be unit, component,
 integration, or functional for a given change.
 
 [Back to index](index.md)

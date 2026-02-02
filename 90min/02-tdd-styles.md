@@ -48,7 +48,7 @@ tax.Verify(t => t.Calculate("CA", 100m), Times.Once);
 
 ## Facilitation note (invite SMEs)
 
-Invite an engineer who has used both styles to share one situation where each
-style worked well.
+A brief share from an engineer who has used both styles can highlight one
+situation where each style worked well.
 
 [Back to index](index.md)

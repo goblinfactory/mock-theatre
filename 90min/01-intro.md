@@ -13,7 +13,7 @@ Align on what "mock theatre" means and why green tests can still hide risk.
 
 ## Quick demo (30-60 seconds)
 
-Show a test that is green but over-specified:
+Example test (green but over-specified):
 
 ```csharp
 public interface IEmailSender
@@ -36,8 +36,8 @@ public void Sends_welcome_email()
 }
 ```
 
-Call out that changing the wording of the email breaks the test even if the user
-still gets the email and the business rule is satisfied.
+Note that changing the wording of the email breaks the test even if the user still
+gets the email and the business rule is satisfied.
 
 ## 2-minute prompt
 
@@ -45,7 +45,7 @@ still gets the email and the business rule is satisfied.
 
 ## Facilitation note (invite SMEs)
 
-Ask anyone who has maintained a fragile test suite to share one example and how
-they recognized it.
+A quick share from someone who has maintained a fragile test suite can add one
+example and how they recognized it.
 
 [Back to index](index.md)

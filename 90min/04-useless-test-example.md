@@ -51,7 +51,7 @@ public void FooFile_contains_exactly_these_25_lines()
 }
 ```
 
-Talk track: "This test can be green while behavior is broken, and it fails on any
+Observation: "This test can be green while behavior is broken, and it fails on any
 safe refactor that changes formatting or structure."
 
 ## 2-minute prompt
@@ -60,7 +60,7 @@ safe refactor that changes formatting or structure."
 
 ## Facilitation note (invite SMEs)
 
-Ask a SME to share a story where removing a similar test improved change
+A SME story about removing a similar test can reinforce improved change
 confidence.
 
 [Back to index](index.md)

@@ -5,7 +5,7 @@ This is the ultra-compressed version for a 5-minute lightning slot.
 ## How to use these notes
 
 - One story, one example, one takeaway.
-- Skip the prompt unless you have a live audience.
+- Prompt can be skipped unless you have a live audience.
 
 ## Quick link
 
@@ -16,6 +16,6 @@ This is the ultra-compressed version for a 5-minute lightning slot.
 | Time | Segment | Notes |
 | --- | --- | --- |
 | 0-1 | Frame the problem | "Green tests can still lie" |
-| 1-3 | Show the anti-pattern | The useless test example |
+| 1-3 | Anti-pattern example | The useless test example |
 | 3-4 | The takeaway | Tests should protect behavior |
-| 4-5 | Point to longer versions | 20min and 90min |
+| 4-5 | Reference longer versions | 20min and 90min |

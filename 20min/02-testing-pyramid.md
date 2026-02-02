@@ -31,6 +31,6 @@ Assert.Equal(108m, await response.Content.ReadFromJsonAsync<decimal>());
 
 ## Facilitation note (invite SMEs)
 
-Ask a SME to share one heuristic for choosing test type under time pressure.
+A SME heuristic for choosing test type under time pressure can help.
 
 [Back to index](index.md)

@@ -26,7 +26,7 @@ public void Sends_welcome_email()
 }
 ```
 
-Call out that this says nothing about the email content or user impact.
+Note that this says nothing about the email content or user impact.
 
 ## 2-minute prompt (optional)
 
@@ -34,6 +34,6 @@ Call out that this says nothing about the email content or user impact.
 
 ## Facilitation note (invite SMEs)
 
-If time allows, ask for one quick example from a SME at the end.
+If time allows, one quick SME example at the end.
 
 [Back to index](index.md)

@@ -21,7 +21,7 @@ public void FooFile_contains_exactly_these_25_lines()
 }
 ```
 
-Talk track: "Green tests like this do not protect user outcomes."
+Observation: "Green tests like this do not protect user outcomes."
 
 ## 2-minute prompt
 
@@ -29,6 +29,6 @@ Talk track: "Green tests like this do not protect user outcomes."
 
 ## Facilitation note (invite SMEs)
 
-Ask a SME for one test they would delete and why.
+A SME share on one test they would delete and why.
 
 [Back to index](index.md)
