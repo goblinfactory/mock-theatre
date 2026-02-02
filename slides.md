@@ -34,21 +34,59 @@ h1, h2, h3 {
 - Test levels should match the risk
 - Useless tests discourage safe refactoring
 
+
 ---
 
-# Mock theatre: definition
+# Who am I?
 
-- Tests verify interactions instead of outcomes
-- Implementation details get locked in
-- Behavior can drift while the suite stays green
+<img src="/img/alan.png" class="h-40 mx-auto" />
+
+<v-clicks>
+
+- Alan Hemmings, contractor
+- Working in Xero Payroll UK `Phoenix` project, part of the outputs team, based in Cambridge UK.
+- My wife and I run Snowcode, a geek ski holiday-conference held at great ski resorts.
+- Open source dev and occasional user group organiser and attendee.
+
+</v-clicks>
+
+---
+
+# Why this topic?
+
+<v-clicks>
+
+- I'm passionate about tesability love testing but I'm not a professional tester. (I like to pack my own parachute because I love sky diving, not because I want to be a professional chute packer.)
+- I'm passionate about self diagnosing code.
+- I recent saw some code that changed some behaviour, without a corresponding change to a test.
+- There's some smart people that like mocks, so I want to learn more.
+- What brings you guys to this session?
+- ?
+- ?
+
+</v-clicks>
+
+
 
 ---
 
 # Why green tests lie
 
+Update this live;  
+
+- ?
+- ?
+- ?
+- ?
+- ?
+- ?
+
+<!--
 - Interaction-only tests can pass while behavior is broken
 - Over-mocking hides wiring and config errors
 - A suite can be 100% green and still allow regressions
+- We're not testing the business requirements
+-->
 
 ---
 
@@ -57,6 +95,8 @@ h1, h2, h3 {
 - Slower change
 - Brittle tests
 - False confidence
+- ?
+- ?
 
 ---
 
@@ -164,7 +204,6 @@ highlight one situation where each style worked well.
 
 - Some teams use fewer unit tests and a heavier middle
 - BDD tools (Reqnroll, SpecFlow) often live in the service/API layer
-- Tradeoff: more realistic coverage, slower feedback, higher maintenance
 
 ---
 
