@@ -1,35 +1,38 @@
 ---
 theme: default
+colorSchema: 'dark'
 title: "Mock Theatre: when green tests mean nothing"
 info: |
   Unconference facilitation deck
   Format: complete end-to-end, skip as needed
 ---
 
+<style>
+.slidev-layout {
+  color: #e0e0e0; /* lighter gray instead of pure white */
+}
+
+/* or for specific elements */
+h1, h2, h3 {
+  color: #05f5f5;
+}
+</style>
+
 # Mock Theatre
 
 ## when green tests mean nothing
 
-![mock theatre](./img/mock-theatre.png)
+<img src="/img/mock-theatre.png" class="h-80 mx-auto" />
 
 ---
 
-# How to use this deck
+# Mock Theatre
 
-- This is the full, end-to-end material
-- No timings; skip or fast-forward as needed
-- Prompts are optional discussion breaks
-- Speaker notes include facilitation guidance
-
----
-
-# Five key ideas
-
-1. Mock theatre: tests that verify the script, not the outcome
-2. Green tests can lie about real behavior
-3. Chicago vs London TDD is a deliberate choice
-4. Test levels should match the risk
-5. Useless tests discourage safe refactoring
+- Mock theatre: tests that verify the script, not the outcome
+- Green tests can lie about real behavior
+- Chicago vs London TDD is a deliberate choice
+- Test levels should match the risk
+- Useless tests discourage safe refactoring
 
 ---
 
@@ -412,3 +415,59 @@ Green tests are only useful when they protect behavior that matters to users.
 - Use this deck end-to-end or jump to the sections you need
 - Pick one test suite to audit for mock theatre
 - Replace one brittle interaction test with an outcome test
+
+---
+
+# References
+
+## Foundational texts
+
+1. **Kent Beck** - *Test Driven Development: By Example* (2002)  
+   The original TDD book, introduces Chicago/classical style
+
+2. **Steve Freeman & Nat Pryce** - *Growing Object-Oriented Software, Guided by Tests* (2009)  
+   The definitive London-school TDD guide
+
+3. **Martin Fowler** - *Mocks Aren't Stubs* (2007)  
+   [martinfowler.com/articles/mocksArentStubs.html](https://martinfowler.com/articles/mocksArentStubs.html)  
+   Essential article distinguishing state vs behavior verification
+
+---
+
+# References (1 of 2)
+
+## Critical perspectives
+
+4. **Ian Cooper** - *TDD, Where Did It All Go Wrong?* (2013)  
+   [youtube.com/watch?v=EZ05e7EMOLM](https://www.youtube.com/watch?v=EZ05e7EMOLM)  
+   How TDD practice diverged from Kent Beck's original intent
+
+5. **J.B. Rainsberger** - *Integrated Tests Are a Scam* (2009)  
+   [blog.thecodewhisperer.com/permalink/integrated-tests-are-a-scam](https://blog.thecodewhisperer.com/permalink/integrated-tests-are-a-scam)  
+   Critique of over-reliance on integrated tests
+
+6. **Google Testing Blog** - *Increase Test Fidelity By Avoiding Mocks* (2024)  
+   [testing.googleblog.com/2024/02/increase-test-fidelity-by-avoiding-mocks.html](http://testing.googleblog.com/2024/02/increase-test-fidelity-by-avoiding-mocks.html)  
+   Recent industry perspective on mock overuse
+
+---
+
+# References (2 of 2)
+
+## Practical guides
+
+7. **ThoughtWorks** - *Mockists Are Dead. Long Live Classicists* (2017)  
+   [thoughtworks.com/insights/blog/mockists-are-dead-long-live-classicists](https://thoughtworks.com/en-us/insights/blog/mockists-are-dead-long-live-classicists)  
+   Industry shift toward classical testing
+
+8. **Adrian Booth** - *Test Driven Development Wars: Detroit vs London* (2020)  
+   [medium.com/@adrianbooth/test-driven-development-wars](https://medium.com/@adrianbooth/test-driven-development-wars-detroit-vs-london-classicist-vs-mockist-9956c78ae95f)  
+   Balanced comparison of both schools
+
+9. **Amazing CTO** - *Mocking is an Anti-Pattern* (2024)  
+   [amazingcto.com/mocking-is-an-antipattern](https://www.amazingcto.com/mocking-is-an-antipattern-how-to-test-without-mocking/)  
+   Practical alternatives to heavy mocking
+
+10. **Instil** - *Mocking, Missteps and Maintenance Nightmares* (2024)  
+    [instil.co/blog/mocking-missteps-and-maintenance-nightmares](https://instil.co/blog/mocking-missteps-and-maintenance-nightmares)  
+    Real-world lessons on mock pitfalls
