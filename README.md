@@ -1,15 +1,43 @@
-# getting started
+# Mock Theatre slides
 
-This repo contains facilitator notes for the unconference session:
+This repo contains a single Slidev presentation for the unconference session
 "Mock Theatre: when green tests mean nothing".
 
 ![mock theatre](./img/mock-theatre.png)
 
-Start here:
+## Start here
 
-- [90-minute version](90min/index.md)
-- [20-minute version](20min/index.md)
-- [5-minute version](5min/index.md)
+- `slides.md` (full end-to-end deck, skip as needed)
 
-Each topic page includes a short demo, a 2-minute prompt for participants, and
-facilitation guidance to invite subject matter experts to share.
+## Local development (npm)
+
+```sh
+npm install
+npm run dev
+```
+
+Open `http://localhost:3030` and press `p` for presenter mode.
+
+## Build static slides
+
+```sh
+npm run build
+```
+
+The static site is generated in `dist/`.
+
+## Docker (static hosting)
+
+```sh
+docker build -t mock-theatre-slides .
+docker run -p 8080:80 mock-theatre-slides
+```
+
+## Docker (presenter mode)
+
+```sh
+docker build -f Dockerfile.dev -t mock-theatre-slides-dev .
+docker run -p 3030:3030 mock-theatre-slides-dev
+```
+
+Open `http://localhost:3030` and press `p` for presenter mode.

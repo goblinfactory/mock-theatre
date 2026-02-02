@@ -1,0 +1,14 @@
+{
+  "name": "mock-theatre-slides",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "slidev dev --host 0.0.0.0 --port 3030",
+    "build": "slidev build --base /",
+    "export": "slidev export"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^52.11.5",
+    "@slidev/theme-default": "^0.25.0"
+  }
+}
