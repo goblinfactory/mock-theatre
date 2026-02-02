@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "slidev dev --host 0.0.0.0 --port 3030",
+    "dev": "CHOKIDAR_USEPOLLING=1 slidev --port 3030",
     "build": "slidev build --base /",
     "export": "slidev export"
   },
