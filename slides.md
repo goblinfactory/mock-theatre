@@ -311,11 +311,6 @@ Discuss
 
 # Test Diamond
 
----
-
-# Q
-
-Where is your team's biggest testing gap on the pyramid or diamond, and why?
 
 ---
 
@@ -327,6 +322,15 @@ Where is your team's biggest testing gap on the pyramid or diamond, and why?
 - Feet in concrete; slow you down when refactoring.
 
 ---
+
+# Who should create mocks of services?
+
+If you're dependant on an API from another team in your org, who you can talk to, who should create the service mock? (and why)
+
+
+---
+
+
 
 # Failure mode example
 
@@ -344,6 +348,29 @@ email is never sent, or the wrong order ID is passed in.
 
 ---
 
+# Where is your team's biggest testing gaps?
+
+(spend the bulk of the time here)
+
+discuss, let subject matter experts share.
+
+-
+-
+
+---
+
+# Snapshot testing
+
+---
+
+
+# Approval tests
+
+---
+
+
+
+
 # References
 
 ## Foundational texts
@@ -360,7 +387,8 @@ email is never sent, or the wrong order ID is passed in.
 
 ---
 
-# References (1 of 2)
+# References 
+
 
 ## Critical perspectives
 
@@ -378,7 +406,7 @@ email is never sent, or the wrong order ID is passed in.
 
 ---
 
-# References (2 of 2)
+# References
 
 ## Practical guides
 
