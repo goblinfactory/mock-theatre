@@ -1260,12 +1260,11 @@ Link: https://github.com/SimonCropp/MarkdownSnippets
    [instil.co/blog/mocking-missteps-and-maintenance-nightmares](https://instil.co/blog/mocking-missteps-and-maintenance-nightmares)  
    Real-world lessons on mock pitfalls
 
-<!-- -->
 ---
 
 # References
 
-## Must checkout tools
+## Must checkout Tools
 
 
 - **Simon Cropp** - *Verify*  
