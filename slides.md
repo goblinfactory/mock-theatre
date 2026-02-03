@@ -18,7 +18,7 @@ h1, h2, h3 {
 }
 </style>
 
-# Mock Theatre
+# Mock Theatre2
 
 ## when green tests mean nothing 
 
@@ -502,43 +502,19 @@ discuss, let subject matter experts share.
 
 ---
 
-# References (1/4)
-
-## Foundational texts
-
-<ul>
-  <li><strong>Kent Beck</strong> - <em>Test Driven Development: By Example</em> (2002)<br/>
-    The original TDD book, introduces Chicago/classical style
-  </li>
-  <li><strong>Steve Freeman & Nat Pryce</strong> - <em>Growing Object-Oriented Software, Guided by Tests</em> (2009)<br/>
-    The definitive London-school TDD guide
-  </li>
-  <li><strong>Martin Fowler</strong> - <em>Mocks Aren't Stubs</em> (2007)<br/>
-    https://martinfowler.com/articles/mocksArentStubs.html<br/>
-    Essential article distinguishing state vs behavior verification
-  </li>
-</ul>
-
----
-
-# References (2/4)
+# References
 
 ## Critical perspectives
 
-<ul>
-  <li><strong>Ian Cooper</strong> - <em>TDD, Where Did It All Go Wrong?</em> (2013)<br/>
-    https://www.youtube.com/watch?v=EZ05e7EMOLM<br/>
-    How TDD practice diverged from Kent Beck's original intent
-  </li>
-  <li><strong>J.B. Rainsberger</strong> - <em>Integrated Tests Are a Scam</em> (2009)<br/>
-    https://blog.thecodewhisperer.com/permalink/integrated-tests-are-a-scam<br/>
-    Critique of over-reliance on integrated tests
-  </li>
-  <li><strong>Google Testing Blog</strong> - <em>Increase Test Fidelity By Avoiding Mocks</em> (2024)<br/>
-    http://testing.googleblog.com/2024/02/increase-test-fidelity-by-avoiding-mocks.html<br/>
-    Recent industry perspective on mock overuse
-  </li>
-</ul>
+- **Ian Cooper** - *TDD, Where Did It All Go Wrong?* (2013)  
+  https://www.youtube.com/watch?v=EZ05e7EMOLM  
+  How TDD practice diverged from Kent Beck's original intent
+- **J.B. Rainsberger** - *Integrated Tests Are a Scam* (2009)  
+  https://blog.thecodewhisperer.com/permalink/integrated-tests-are-a-scam  
+  Critique of over-reliance on integrated tests
+- **Google Testing Blog** - *Increase Test Fidelity By Avoiding Mocks* (2024)  
+  http://testing.googleblog.com/2024/02/increase-test-fidelity-by-avoiding-mocks.html  
+  Recent industry perspective on mock overuse
 
 ---
 
@@ -571,32 +547,24 @@ discuss, let subject matter experts share.
 
 ## Must checkout tools
 
-<ul>
-  <li><strong>Simon Cropp</strong> - <em>Verify</em><br/>
-    https://github.com/VerifyTests/Verify<br/>
-    Modern approval/snapshot testing for .NET
-  </li>
-  <li><strong>Llewellyn Falco</strong> - <em>Approval Tests</em><br/>
-    https://approvaltests.com<br/>
-    Originator of Approval Tests and core guidance
-  </li>
-  <li><strong>ApprovalTests for .NET</strong><br/>
-    https://github.com/approvals/ApprovalTests.Net<br/>
-    .NET library and examples
-  </li>
-  <li><strong>Reqnroll</strong><br/>
-    https://reqnroll.net<br/>
-    BDD framework for .NET (SpecFlow successor)
-  </li>
-  <li><strong>MarkdownSnippets</strong><br/>
-    https://github.com/SimonCropp/MarkdownSnippets<br/>
-    Keep documentation examples in sync with code
-  </li>
-  <li><strong>Go executable examples</strong><br/>
-    https://go.dev/blog/examples<br/>
-    Executable documentation in Go (examples run as tests)
-  </li>
-</ul>
+- **Simon Cropp** - *Verify*  
+  https://github.com/VerifyTests/Verify  
+  Modern approval/snapshot testing for .NET
+- **Llewellyn Falco** - *Approval Tests*  
+  https://approvaltests.com  
+  Originator of Approval Tests and core guidance
+- **ApprovalTests for .NET**  
+  https://github.com/approvals/ApprovalTests.Net  
+  .NET library and examples
+- **Reqnroll**  
+  https://reqnroll.net  
+  BDD framework for .NET (SpecFlow successor)
+- **MarkdownSnippets**  
+  https://github.com/SimonCropp/MarkdownSnippets  
+  Keep documentation examples in sync with code
+- **Go executable examples**  
+  https://go.dev/blog/examples  
+  Executable documentation in Go (examples run as tests)
 
 ---
 
@@ -1218,32 +1186,24 @@ Link: https://github.com/SimonCropp/MarkdownSnippets
 
 ## Must checkout tools
 
-<ul>
-  <li><strong>Simon Cropp</strong> - <em>Verify</em><br/>
-    https://github.com/VerifyTests/Verify<br/>
-    Modern approval/snapshot testing for .NET
-  </li>
-  <li><strong>Llewellyn Falco</strong> - <em>Approval Tests</em><br/>
-    https://approvaltests.com<br/>
-    Originator of Approval Tests and core guidance
-  </li>
-  <li><strong>ApprovalTests for .NET</strong><br/>
-    https://github.com/approvals/ApprovalTests.Net<br/>
-    .NET library and examples
-  </li>
-  <li><strong>Reqnroll</strong><br/>
-    https://reqnroll.net<br/>
-    BDD framework for .NET (SpecFlow successor)
-  </li>
-  <li><strong>MarkdownSnippets</strong><br/>
-    https://github.com/SimonCropp/MarkdownSnippets<br/>
-    Keep documentation examples in sync with code
-  </li>
-  <li><strong>Go executable examples</strong><br/>
-    https://go.dev/blog/examples<br/>
-    Executable documentation in Go (examples run as tests)
-  </li>
-</ul>
+- **Simon Cropp** - *Verify*  
+  https://github.com/VerifyTests/Verify  
+  Modern approval/snapshot testing for .NET
+- **Llewellyn Falco** - *Approval Tests*  
+  https://approvaltests.com  
+  Originator of Approval Tests and core guidance
+- **ApprovalTests for .NET**  
+  https://github.com/approvals/ApprovalTests.Net  
+  .NET library and examples
+- **Reqnroll**  
+  https://reqnroll.net  
+  BDD framework for .NET (SpecFlow successor)
+- **MarkdownSnippets**  
+  https://github.com/SimonCropp/MarkdownSnippets  
+  Keep documentation examples in sync with code
+- **Go executable examples**  
+  https://go.dev/blog/examples  
+  Executable documentation in Go (examples run as tests)
 
 ---
 
