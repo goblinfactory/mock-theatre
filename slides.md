@@ -345,24 +345,21 @@ Discuss
 
 --- 
  
-# Test Pyramid
+# Traditional Test Pyramid
 
-```
-           /\
-          /  \
-         / UI \           ← Few, slow, brittle
-        /______\
-       /        \
-      / Integr.  \        ← Some, medium speed
-     /____________\
-    /              \
-   /  Unit Tests    \     ← Many, fast, focused
-  /__________________\
 
-```
+<img src="/img/test-pyramid.png" class="h-80 mx-auto" />
 
 --- 
+
 # Where are the executable specifications?
+
+<div class="grid grid-cols-2 gap-6">
+<div>
+<img src="/img/test-pyramid.png" class="h-80 mx-auto" />
+
+</div>
+<div>
 
 <v-clicks>
 
@@ -372,6 +369,8 @@ Discuss
 
 </v-clicks>
 
+</div>
+</div>
 
 ---
 
