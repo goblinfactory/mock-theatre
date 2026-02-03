@@ -347,14 +347,60 @@ Discuss
  
 # Test Pyramid
 
+```
+           /\
+          /  \
+         / UI \           ← Few, slow, brittle
+        /______\
+       /        \
+      / Integr.  \        ← Some, medium speed
+     /____________\
+    /              \
+   /  Unit Tests    \     ← Many, fast, focused
+  /__________________\
+
+```
+
+--- 
+# Where are the executable specifications?
+
+<v-clicks>
+
+- If we use a test pyramid then and you say, well, they are at the top, then that only gives you happy path testing.
+- It doesnt make grey areas unambiguous with worked examples
+- UX tests get created (most often) far too long after the work is done, and often by an entirely different team.  
+
+</v-clicks>
 
 
 ---
 
 # Test Diamond
 
+```
+           /\
+          /  \
+         / UI \           ← Few, slow
+        /______\
+       /        \
+      /          \
+     /  Service   \       ← Many, BDD/API tests
+    /    (Fat      \         (Reqnroll, SpecFlow)
+   /     Middle)     \
+  /__________________ \
+  \                  /
+   \   Unit Tests   /     ← Some, fast
+    \______________/
+
+```
 
 ---
+# BDD Test libraries
+
+- Reqnroll
+- Specflow et
+
+
 
 # When tests lie
 
