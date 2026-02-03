@@ -16,8 +16,15 @@ info: |
 h1, h2, h3 {
   color: #05f5f5;
 }
-
 </style>
+
+# Mock Theatre
+
+## ... when green tests go rogue
+<br/>
+
+<img src="/img/mock-theatre.png" class="h-60 mx-auto" />
+
 
 ---
 src: ./pages/intro.md

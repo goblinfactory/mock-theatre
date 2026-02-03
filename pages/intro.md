@@ -1,14 +1,18 @@
-# Mock Theatre
-
-## when green tests mean nothing 
-
-<img src="/img/mock-theatre.png" class="h-80 mx-auto" />
-
----
-
 ## and ...Chicago vs London testing 
 
 - because we gotta talk about this!
+
+---
+
+# Who am I?
+
+<img src="/img/alan-teeth.png" class="h-40 mx-auto" />
+
+- Alan Hemmings, contractor
+- Working in Xero Payroll UK `Phoenix` project, part of the outputs team, based in Cambridge UK. 
+- Open source dev and occasional user group organiser and attendee.
+- I like snowboarding, and tinkering in my homelab.
+
 
 ---
 
@@ -43,16 +47,6 @@ For those interested in traditional speaker talks on these topics, Please see re
 
 
 
----
-
-# Who am I?
-
-<img src="/img/alan-teeth.png" class="h-40 mx-auto" />
-
-- Alan Hemmings, contractor
-- Working in Xero Payroll UK `Phoenix` project, part of the outputs team, based in Cambridge UK. 
-- Open source dev and occasional user group organiser and attendee.
-- I like snowboarding, and tinkering in my homelab.
 
 ---
 
