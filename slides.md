@@ -1115,97 +1115,10 @@ public void Invoice_pdf_matches_approved_output()
 
 Link: https://github.com/SimonCropp/MarkdownSnippets
 
----
-
-# References (1/4)
-
-## Foundational texts
-
-<ul>
-  <li><strong>Kent Beck</strong> - <em>Test Driven Development: By Example</em> (2002)<br/>
-    The original TDD book, introduces Chicago/classical style
-  </li>
-  <li><strong>Steve Freeman & Nat Pryce</strong> - <em>Growing Object-Oriented Software, Guided by Tests</em> (2009)<br/>
-    The definitive London-school TDD guide
-  </li>
-  <li><strong>Martin Fowler</strong> - <em>Mocks Aren't Stubs</em> (2007)<br/>
-    https://martinfowler.com/articles/mocksArentStubs.html<br/>
-    Essential article distinguishing state vs behavior verification
-  </li>
-</ul>
 
 ---
 
-# References (2/4)
-
-## Critical perspectives
-
-<ul>
-  <li><strong>Ian Cooper</strong> - <em>TDD, Where Did It All Go Wrong?</em> (2013)<br/>
-    https://www.youtube.com/watch?v=EZ05e7EMOLM<br/>
-    How TDD practice diverged from Kent Beck's original intent
-  </li>
-  <li><strong>J.B. Rainsberger</strong> - <em>Integrated Tests Are a Scam</em> (2009)<br/>
-    https://blog.thecodewhisperer.com/permalink/integrated-tests-are-a-scam<br/>
-    Critique of over-reliance on integrated tests
-  </li>
-  <li><strong>Google Testing Blog</strong> - <em>Increase Test Fidelity By Avoiding Mocks</em> (2024)<br/>
-    http://testing.googleblog.com/2024/02/increase-test-fidelity-by-avoiding-mocks.html<br/>
-    Recent industry perspective on mock overuse
-  </li>
-</ul>
-
----
-
-# References (3/4)
-
-## Practical guides
-
-<ul>
-  <li><strong>ThoughtWorks</strong> - <em>Mockists Are Dead. Long Live Classicists</em> (2017)<br/>
-    https://thoughtworks.com/insights/blog/mockists-are-dead-long-live-classicists<br/>
-    Industry shift toward classical testing
-  </li>
-  <li><strong>Adrian Booth</strong> - <em>Test Driven Development Wars: Detroit vs London</em> (2020)<br/>
-    https://medium.com/@adrianbooth/test-driven-development-wars<br/>
-    Balanced comparison of both schools
-  </li>
-  <li><strong>Amazing CTO</strong> - <em>Mocking is an Anti-Pattern</em> (2024)<br/>
-    https://www.amazingcto.com/mocking-is-an-antipattern-how-to-test-without-mocking/<br/>
-    Practical alternatives to heavy mocking
-  </li>
-  <li><strong>Instil</strong> - <em>Mocking, Missteps and Maintenance Nightmares</em> (2024)<br/>
-    https://instil.co/blog/mocking-missteps-and-maintenance-nightmares<br/>
-    Real-world lessons on mock pitfalls
-  </li>
-</ul>
-
----
-
-# References (4/4)
-
-## Must checkout tools
-
-- **Simon Cropp** - *Verify*  
-  https://github.com/VerifyTests/Verify  
-  Modern approval/snapshot testing for .NET
-- **Llewellyn Falco** - *Approval Tests*  
-  https://approvaltests.com  
-  Originator of Approval Tests and core guidance
-- **ApprovalTests for .NET**  
-  https://github.com/approvals/ApprovalTests.Net  
-  .NET library and examples
-- **Reqnroll**  
-  https://reqnroll.net  
-  BDD framework for .NET (SpecFlow successor)
-- **MarkdownSnippets**  
-  https://github.com/SimonCropp/MarkdownSnippets  
-  Keep documentation examples in sync with code
-- **Go executable examples**  
-  https://go.dev/blog/examples  
-  Executable documentation in Go (examples run as tests)
-
----
+# References
 
 ## Foundational texts
 
@@ -1222,7 +1135,6 @@ Link: https://github.com/SimonCropp/MarkdownSnippets
 ---
 
 # References 
-
 
 ## Critical perspectives
 
