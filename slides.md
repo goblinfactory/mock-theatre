@@ -48,7 +48,7 @@ The "Roman Vote" (Thumb Voting): Every 5–8 minutes, the table moderator (or ju
 
 The Rotation: Unlike a standard Lean Coffee, people are encouraged to "vote with their feet" and move between tables if the topic isn't grabbing them.
 
-i.e. I'm more of facilitating, than presenting. if you're looking for pure speaker talks, there's some excellent talks <a href=''>referenced in the last slides. </a> today is going to be collaborative;
+i.e. I'm more of facilitating, than presenting. if you're looking for pure speaker talks, there's some excellent talks referenced in the last slides. today is going to be collaborative;
 
 <small>I'll take notes, and save them to the repo;</small>
 
@@ -60,8 +60,11 @@ i.e. I'm more of facilitating, than presenting. if you're looking for pure speak
 
 - Alan Hemmings, contractor
 - Working in Xero Payroll UK `Phoenix` project, part of the outputs team, based in Cambridge UK.
+- alan.hemmings@xero.com
 - My wife and I run Snowcode, a geek ski holiday-conference held at great ski resorts.
 - Open source dev and occasional user group organiser and attendee.
+
+this slidedeck : https://github.com/goblinfactory/mock-theatre
 
 ---
 
@@ -499,17 +502,113 @@ discuss, let subject matter experts share.
 
 ---
 
-# References
+# References (1/4)
+
+## Foundational texts
+
+<ul>
+  <li><strong>Kent Beck</strong> - <em>Test Driven Development: By Example</em> (2002)<br/>
+    The original TDD book, introduces Chicago/classical style
+  </li>
+  <li><strong>Steve Freeman & Nat Pryce</strong> - <em>Growing Object-Oriented Software, Guided by Tests</em> (2009)<br/>
+    The definitive London-school TDD guide
+  </li>
+  <li><strong>Martin Fowler</strong> - <em>Mocks Aren't Stubs</em> (2007)<br/>
+    https://martinfowler.com/articles/mocksArentStubs.html<br/>
+    Essential article distinguishing state vs behavior verification
+  </li>
+</ul>
+
+---
+
+# References (2/4)
+
+## Critical perspectives
+
+<ul>
+  <li><strong>Ian Cooper</strong> - <em>TDD, Where Did It All Go Wrong?</em> (2013)<br/>
+    https://www.youtube.com/watch?v=EZ05e7EMOLM<br/>
+    How TDD practice diverged from Kent Beck's original intent
+  </li>
+  <li><strong>J.B. Rainsberger</strong> - <em>Integrated Tests Are a Scam</em> (2009)<br/>
+    https://blog.thecodewhisperer.com/permalink/integrated-tests-are-a-scam<br/>
+    Critique of over-reliance on integrated tests
+  </li>
+  <li><strong>Google Testing Blog</strong> - <em>Increase Test Fidelity By Avoiding Mocks</em> (2024)<br/>
+    http://testing.googleblog.com/2024/02/increase-test-fidelity-by-avoiding-mocks.html<br/>
+    Recent industry perspective on mock overuse
+  </li>
+</ul>
+
+---
+
+# References (3/4)
+
+## Practical guides
+
+<ul>
+  <li><strong>ThoughtWorks</strong> - <em>Mockists Are Dead. Long Live Classicists</em> (2017)<br/>
+    https://thoughtworks.com/insights/blog/mockists-are-dead-long-live-classicists<br/>
+    Industry shift toward classical testing
+  </li>
+  <li><strong>Adrian Booth</strong> - <em>Test Driven Development Wars: Detroit vs London</em> (2020)<br/>
+    https://medium.com/@adrianbooth/test-driven-development-wars<br/>
+    Balanced comparison of both schools
+  </li>
+  <li><strong>Amazing CTO</strong> - <em>Mocking is an Anti-Pattern</em> (2024)<br/>
+    https://www.amazingcto.com/mocking-is-an-antipattern-how-to-test-without-mocking/<br/>
+    Practical alternatives to heavy mocking
+  </li>
+  <li><strong>Instil</strong> - <em>Mocking, Missteps and Maintenance Nightmares</em> (2024)<br/>
+    https://instil.co/blog/mocking-missteps-and-maintenance-nightmares<br/>
+    Real-world lessons on mock pitfalls
+  </li>
+</ul>
+
+---
+
+# References (4/4)
+
+## Must checkout tools
+
+<ul>
+  <li><strong>Simon Cropp</strong> - <em>Verify</em><br/>
+    https://github.com/VerifyTests/Verify<br/>
+    Modern approval/snapshot testing for .NET
+  </li>
+  <li><strong>Llewellyn Falco</strong> - <em>Approval Tests</em><br/>
+    https://approvaltests.com<br/>
+    Originator of Approval Tests and core guidance
+  </li>
+  <li><strong>ApprovalTests for .NET</strong><br/>
+    https://github.com/approvals/ApprovalTests.Net<br/>
+    .NET library and examples
+  </li>
+  <li><strong>Reqnroll</strong><br/>
+    https://reqnroll.net<br/>
+    BDD framework for .NET (SpecFlow successor)
+  </li>
+  <li><strong>MarkdownSnippets</strong><br/>
+    https://github.com/SimonCropp/MarkdownSnippets<br/>
+    Keep documentation examples in sync with code
+  </li>
+  <li><strong>Go executable examples</strong><br/>
+    https://go.dev/blog/examples<br/>
+    Executable documentation in Go (examples run as tests)
+  </li>
+</ul>
+
+---
 
 ## Foundational texts
 
 1. **Kent Beck** - *Test Driven Development: By Example* (2002)  
    The original TDD book, introduces Chicago/classical style
 
-2. **Steve Freeman & Nat Pryce** - *Growing Object-Oriented Software, Guided by Tests* (2009)  
+1. **Steve Freeman & Nat Pryce** - *Growing Object-Oriented Software, Guided by Tests* (2009)  
    The definitive London-school TDD guide
 
-3. **Martin Fowler** - *Mocks Aren't Stubs* (2007)  
+1. **Martin Fowler** - *Mocks Aren't Stubs* (2007)  
    [martinfowler.com/articles/mocksArentStubs.html](https://martinfowler.com/articles/mocksArentStubs.html)  
    Essential article distinguishing state vs behavior verification
 
@@ -519,15 +618,15 @@ discuss, let subject matter experts share.
 
 ## Critical perspectives
 
-4. **Ian Cooper** - *TDD, Where Did It All Go Wrong?* (2013)  
+1. **Ian Cooper** - *TDD, Where Did It All Go Wrong?* (2013)  
    [youtube.com/watch?v=EZ05e7EMOLM](https://www.youtube.com/watch?v=EZ05e7EMOLM)  
    How TDD practice diverged from Kent Beck's original intent
 
-5. **J.B. Rainsberger** - *Integrated Tests Are a Scam* (2009)  
+1. **J.B. Rainsberger** - *Integrated Tests Are a Scam* (2009)  
    [blog.thecodewhisperer.com/permalink/integrated-tests-are-a-scam](https://blog.thecodewhisperer.com/permalink/integrated-tests-are-a-scam)  
    Critique of over-reliance on integrated tests
 
-6. **Google Testing Blog** - *Increase Test Fidelity By Avoiding Mocks* (2024)  
+1. **Google Testing Blog** - *Increase Test Fidelity By Avoiding Mocks* (2024)  
    [testing.googleblog.com/2024/02/increase-test-fidelity-by-avoiding-mocks.html](http://testing.googleblog.com/2024/02/increase-test-fidelity-by-avoiding-mocks.html)  
    Recent industry perspective on mock overuse
 
@@ -611,7 +710,7 @@ The "Roman Vote" (Thumb Voting): Every 5–8 minutes, the table moderator (or ju
 
 The Rotation: Unlike a standard Lean Coffee, people are encouraged to "vote with their feet" and move between tables if the topic isn't grabbing them.
 
-i.e. I'm more of facilitating, than presenting. if you're looking for pure speaker talks, there's some excellent talks <a href=''>referenced in the last slides. </a> today is going to be collaborative;
+i.e. I'm more of facilitating, than presenting. if you're looking for pure speaker talks, there's some excellent talks referenced in the last slides. today is going to be collaborative;
 
 <small>I'll take notes, and save them to the repo;</small>
 
@@ -1050,10 +1149,103 @@ Link: https://github.com/SimonCropp/MarkdownSnippets
 
 ---
 
+# References (1/4)
 
+## Foundational texts
 
+<ul>
+  <li><strong>Kent Beck</strong> - <em>Test Driven Development: By Example</em> (2002)<br/>
+    The original TDD book, introduces Chicago/classical style
+  </li>
+  <li><strong>Steve Freeman & Nat Pryce</strong> - <em>Growing Object-Oriented Software, Guided by Tests</em> (2009)<br/>
+    The definitive London-school TDD guide
+  </li>
+  <li><strong>Martin Fowler</strong> - <em>Mocks Aren't Stubs</em> (2007)<br/>
+    https://martinfowler.com/articles/mocksArentStubs.html<br/>
+    Essential article distinguishing state vs behavior verification
+  </li>
+</ul>
 
-# References
+---
+
+# References (2/4)
+
+## Critical perspectives
+
+<ul>
+  <li><strong>Ian Cooper</strong> - <em>TDD, Where Did It All Go Wrong?</em> (2013)<br/>
+    https://www.youtube.com/watch?v=EZ05e7EMOLM<br/>
+    How TDD practice diverged from Kent Beck's original intent
+  </li>
+  <li><strong>J.B. Rainsberger</strong> - <em>Integrated Tests Are a Scam</em> (2009)<br/>
+    https://blog.thecodewhisperer.com/permalink/integrated-tests-are-a-scam<br/>
+    Critique of over-reliance on integrated tests
+  </li>
+  <li><strong>Google Testing Blog</strong> - <em>Increase Test Fidelity By Avoiding Mocks</em> (2024)<br/>
+    http://testing.googleblog.com/2024/02/increase-test-fidelity-by-avoiding-mocks.html<br/>
+    Recent industry perspective on mock overuse
+  </li>
+</ul>
+
+---
+
+# References (3/4)
+
+## Practical guides
+
+<ul>
+  <li><strong>ThoughtWorks</strong> - <em>Mockists Are Dead. Long Live Classicists</em> (2017)<br/>
+    https://thoughtworks.com/insights/blog/mockists-are-dead-long-live-classicists<br/>
+    Industry shift toward classical testing
+  </li>
+  <li><strong>Adrian Booth</strong> - <em>Test Driven Development Wars: Detroit vs London</em> (2020)<br/>
+    https://medium.com/@adrianbooth/test-driven-development-wars<br/>
+    Balanced comparison of both schools
+  </li>
+  <li><strong>Amazing CTO</strong> - <em>Mocking is an Anti-Pattern</em> (2024)<br/>
+    https://www.amazingcto.com/mocking-is-an-antipattern-how-to-test-without-mocking/<br/>
+    Practical alternatives to heavy mocking
+  </li>
+  <li><strong>Instil</strong> - <em>Mocking, Missteps and Maintenance Nightmares</em> (2024)<br/>
+    https://instil.co/blog/mocking-missteps-and-maintenance-nightmares<br/>
+    Real-world lessons on mock pitfalls
+  </li>
+</ul>
+
+---
+
+# References (4/4)
+
+## Must checkout tools
+
+<ul>
+  <li><strong>Simon Cropp</strong> - <em>Verify</em><br/>
+    https://github.com/VerifyTests/Verify<br/>
+    Modern approval/snapshot testing for .NET
+  </li>
+  <li><strong>Llewellyn Falco</strong> - <em>Approval Tests</em><br/>
+    https://approvaltests.com<br/>
+    Originator of Approval Tests and core guidance
+  </li>
+  <li><strong>ApprovalTests for .NET</strong><br/>
+    https://github.com/approvals/ApprovalTests.Net<br/>
+    .NET library and examples
+  </li>
+  <li><strong>Reqnroll</strong><br/>
+    https://reqnroll.net<br/>
+    BDD framework for .NET (SpecFlow successor)
+  </li>
+  <li><strong>MarkdownSnippets</strong><br/>
+    https://github.com/SimonCropp/MarkdownSnippets<br/>
+    Keep documentation examples in sync with code
+  </li>
+  <li><strong>Go executable examples</strong><br/>
+    https://go.dev/blog/examples<br/>
+    Executable documentation in Go (examples run as tests)
+  </li>
+</ul>
+
+---
 
 ## Foundational texts
 
@@ -1092,23 +1284,23 @@ Link: https://github.com/SimonCropp/MarkdownSnippets
 
 ## Practical guides
 
-1. **ThoughtWorks** - *Mockists Are Dead. Long Live Classicists* (2017)  
+- **ThoughtWorks** - *Mockists Are Dead. Long Live Classicists* (2017)  
    [thoughtworks.com/insights/blog/mockists-are-dead-long-live-classicists](https://thoughtworks.com/en-us/insights/blog/mockists-are-dead-long-live-classicists)  
    Industry shift toward classical testing
 
-2. **Adrian Booth** - *Test Driven Development Wars: Detroit vs London* (2020)  
+- **Adrian Booth** - *Test Driven Development Wars: Detroit vs London* (2020)  
    [medium.com/@adrianbooth/test-driven-development-wars](https://medium.com/@adrianbooth/test-driven-development-wars-detroit-vs-london-classicist-vs-mockist-9956c78ae95f)  
    Balanced comparison of both schools
 
-3. **Amazing CTO** - *Mocking is an Anti-Pattern* (2024)  
+- **Amazing CTO** - *Mocking is an Anti-Pattern* (2024)  
    [amazingcto.com/mocking-is-an-antipattern](https://www.amazingcto.com/mocking-is-an-antipattern-how-to-test-without-mocking/)  
    Practical alternatives to heavy mocking
 
-4. **Instil** - *Mocking, Missteps and Maintenance Nightmares* (2024)  
+- **Instil** - *Mocking, Missteps and Maintenance Nightmares* (2024)  
    [instil.co/blog/mocking-missteps-and-maintenance-nightmares](https://instil.co/blog/mocking-missteps-and-maintenance-nightmares)  
    Real-world lessons on mock pitfalls
 
-
+<!-- -->
 ---
 
 # References
@@ -1116,19 +1308,21 @@ Link: https://github.com/SimonCropp/MarkdownSnippets
 ## Must checkout tools
 
 
-1. **Simon Cropp** - *Verify*  
+- **Simon Cropp** - *Verify*  
    [github.com/VerifyTests/Verify](https://github.com/VerifyTests/Verify)  
    Modern approval/snapshot testing for .NET
 
-2. **Llewellyn Falco** - *Approval Tests*  
+- **Llewellyn Falco** - *Approval Tests*  
    [approvaltests.com](https://approvaltests.com)  
    Originator of Approval Tests and core guidance
 
-3. **ApprovalTests for .NET**  
+- **ApprovalTests for .NET**  
    [github.com/approvals/ApprovalTests.Net](https://github.com/approvals/ApprovalTests.Net)  
    .NET library and examples
 
-4. **Reqnroll**  
+- **Reqnroll**  
    [reqnroll.net](https://reqnroll.net)  
    BDD framework for .NET (SpecFlow successor)
+
+---
 
