@@ -20,19 +20,40 @@ h1, h2, h3 {
 
 # Mock Theatre
 
-## when green tests mean nothing
+## when green tests mean nothing 
 
 <img src="/img/mock-theatre.png" class="h-80 mx-auto" />
 
 ---
 
-# Mock Theatre
+## and ...Chicago vs London testing 
 
-- Mock theatre: tests that verify the script, not the outcome
-- Green tests can lie about real behavior
-- Chicago vs London TDD is a deliberate choice
-- Test levels should match the risk
-- Useless tests discourage safe refactoring
+- because we gotta talk about this!
+
+
+---
+
+## Apologies in advance ... if you were expecting a "speaker"
+
+I'm just facilitating;
+
+I was expecting this to be a physical meetup around table Lean Beers style, ala london .NET u/g style;
+
+The Physical Setup: Multiple tables are spread across a pub. Each table has a stack of Post-its and Sharpies.
+
+The Topic "Pitch": Instead of one speaker, attendees write topics on Post-its. On each table, these are grouped into "To Discuss," "Discussing," and "Done."
+
+Dot Voting: People use their pens to put "dots" on the topics they care about most.
+
+The "Roman Vote" (Thumb Voting): Every 5–8 minutes, the table moderator (or just the group) does a "thumbs up/down/sideways" to decide whether to keep talking about the current topic or move to the next.
+
+The Rotation: Unlike a standard Lean Coffee, people are encouraged to "vote with their feet" and move between tables if the topic isn't grabbing them.
+
+i.e. I'm more of facilitating, than presenting. if you're looking for pure speaker talks, there's some excellent talks <a href=''>referenced in the last slides. </a> today is going to be collaborative;
+
+<small>I'll take notes, and save them to the repo;</small>
+
+
 
 
 ---
@@ -41,18 +62,14 @@ h1, h2, h3 {
 
 <img src="/img/alan.png" class="h-40 mx-auto" />
 
-<v-clicks>
-
 - Alan Hemmings, contractor
 - Working in Xero Payroll UK `Phoenix` project, part of the outputs team, based in Cambridge UK.
 - My wife and I run Snowcode, a geek ski holiday-conference held at great ski resorts.
 - Open source dev and occasional user group organiser and attendee.
 
-</v-clicks>
-
 ---
 
-# Why this topic?
+# Why this (these 2) topics?
 
 <v-clicks>
 
@@ -66,37 +83,86 @@ h1, h2, h3 {
 
 </v-clicks>
 
+---
+
+# What are some test anti-patterns?
+
+discuss
+
+-
+-
+
+---
+
+
+# Why green tests can lie?
+
+Discuss
+
+- 
+- 
+
+---
+
+# What is Chicago and London style testing?
+
+(I had never heard this way of describing the testing before Friday, I had to look it up ) Volunteer please to explain ?
+
+<v-clicks>
+
+## Chicago Testing
+
+-
+-
+
+## London Testing
+
+-
+-
+</v-clicks>
 
 
 ---
 
-# Why green tests lie
 
-Update this live;  
+# Chicago-style example
 
-- ?
-- ?
-- ?
-- ?
-- ?
-- ?
+<v-clicks>
 
-<!--
-- Interaction-only tests can pass while behavior is broken
-- Over-mocking hides wiring and config errors
-- A suite can be 100% green and still allow regressions
-- We're not testing the business requirements
--->
 
----
+```csharp
+var taxTable = new InMemoryTaxTable(new Dictionary<string, decimal>
+{
+    ["CA"] = 0.08m
+});
+var calculator = new TaxCalculator(taxTable);
+var service = new OrderService(calculator);
 
-# The cost
+var total = service.Total("CA", 100m);
 
-- Slower change
-- Brittle tests
-- False confidence
-- ?
-- ?
+Assert.Equal(108m, total);
+```
+
+</v-clicks>
+
+<v-clicks>
+
+# London-style example
+
+```csharp
+var tax = new Mock<ITaxCalculator>();
+tax.Setup(t => t.Calculate("CA", 100m)).Returns(8m);
+var service = new OrderService(tax.Object);
+
+var total = service.Total("CA", 100m);
+
+Assert.Equal(108m, total);
+tax.Verify(t => t.Calculate("CA", 100m), Times.Once);
+```
+
+</v-clicks>
+
+
 
 ---
 
@@ -128,7 +194,7 @@ gets the email and the business rule is satisfied.
 
 ---
 
-# Prompt
+# Q
 
 Where have you seen green tests give false confidence?
 
@@ -139,136 +205,126 @@ test suite can add one example and how they recognized it.
 
 ---
 
-# Chicago vs London TDD
 
-- Chicago: real collaborators, state-based assertions
-- London: mocks, interaction-based assertions
-- Both are valid; the risk is defaulting to mocks everywhere
-- Choice depends on dependency cost and observability
+# Q : Mocks vs Stubbs vs Test Doubles
+
+What's the difference between these?
+
+... write down answers
+
+-
+-
 
 ---
 
-# Chicago-style example
+# Mock: verifies behavior
 
 ```csharp
-var taxTable = new InMemoryTaxTable(new Dictionary<string, decimal>
+[Fact]
+public void Notifies_user_when_order_placed()
 {
-    ["CA"] = 0.08m
-});
-var calculator = new TaxCalculator(taxTable);
-var service = new OrderService(calculator);
+    var notifier = new Mock<INotifier>();
+    var service = new OrderService(notifier.Object);
 
-var total = service.Total("CA", 100m);
+    service.PlaceOrder(orderId: 123);
 
-Assert.Equal(108m, total);
+    notifier.Verify(n => n.Send(123), Times.Once);
+}
 ```
 
+A **mock** checks that the right interaction happened.
+
 ---
 
-# London-style example
+# Stub: provides canned responses
 
 ```csharp
-var tax = new Mock<ITaxCalculator>();
-tax.Setup(t => t.Calculate("CA", 100m)).Returns(8m);
-var service = new OrderService(tax.Object);
-
-var total = service.Total("CA", 100m);
-
-Assert.Equal(108m, total);
-tax.Verify(t => t.Calculate("CA", 100m), Times.Once);
-```
-
----
-
-# Prompt
-
-Where do you draw the line between real collaborators and mocks in your codebase?
-
-<!--
-Facilitation note: A brief share from an engineer who has used both styles can
-highlight one situation where each style worked well.
--->
-
----
-
-# Testing pyramid and test types
-
-- Unit tests: small, fast, logic-focused
-- Component tests: service in isolation with real internals
-- Integration tests: real infrastructure and wiring
-- Functional tests: user-visible behavior, often end-to-end
-
----
-
-# Testing diamond (fat middle)
-
-- Some teams use fewer unit tests and a heavier middle
-- BDD tools (Reqnroll, SpecFlow) often live in the service/API layer
-
----
-
-# Same behavior, different levels (1/2)
-
-Behavior: "Order total includes tax."
-
-Unit test:
-
-```csharp
-Assert.Equal(108m, TaxCalculator.TotalWithTax(100m, 0.08m));
-```
-
-Component test:
-
-```csharp
-var taxTable = new InMemoryTaxTable(new Dictionary<string, decimal>
+[Fact]
+public void Calculates_shipping_cost()
 {
-    ["CA"] = 0.08m
-});
-var service = new OrderService(new TaxCalculator(taxTable));
+    var rateProvider = new Mock<IRateProvider>();
+    rateProvider.Setup(r => r.GetRate("UK")).Returns(5.99m);
+    var service = new ShippingService(rateProvider.Object);
 
-Assert.Equal(108m, service.Total("CA", 100m));
+    var cost = service.Calculate("UK", weight: 2.5m);
+
+    Assert.Equal(14.98m, cost);
+}
 ```
+
+A **stub** returns pre-set values (no verification).
 
 ---
 
-# Same behavior, different levels (2/2)
-
-Integration test:
+# Fake: working lightweight implementation
 
 ```csharp
-using var db = new RealDbConnection(connectionString);
-var service = new OrderService(new TaxCalculator(new TaxTable(db)));
+[Fact]
+public void Saves_and_retrieves_customer()
+{
+    var repo = new InMemoryCustomerRepo(); // fake
+    var service = new CustomerService(repo);
 
-Assert.Equal(108m, service.Total("CA", 100m));
+    service.Save(new Customer { Id = 1, Name = "Alice" });
+    var result = service.Get(1);
+
+    Assert.Equal("Alice", result.Name);
+}
 ```
 
-Functional test:
+A **fake** has real logic but uses shortcuts (e.g. in-memory).
 
-```csharp
-var response = await client.PostAsJsonAsync("/orders/total",
-    new { state = "CA", subtotal = 100m });
-response.EnsureSuccessStatusCode();
-Assert.Equal(108m, await response.Content.ReadFromJsonAsync<decimal>());
-```
+<v-clicks>
+
+### Q : When is a fake better than a Stub?
+
+Discuss
+
+</v-clicks>
+
 
 ---
 
-# Prompt
+# What's the difference between a component test and an Integration Test?
+
+Discuss
+
+-
+-
+
+---
+
+# Testing diamond (fat middle) instead of a testing Pyramid?
+
+ Discuss
+
+-
+- 
+
+--- 
+ 
+# Test Pyramid
+
+
+
+---
+
+# Test Diamond
+
+---
+
+# Q
 
 Where is your team's biggest testing gap on the pyramid or diamond, and why?
-
-<!--
-Facilitation note: A SME share on how they decide whether a test should be unit,
-component, integration, or functional for a given change.
--->
 
 ---
 
 # When tests lie
 
-- Interaction-only tests can pass while outcomes are broken
-- Over-mocking hides integration mistakes and config errors
-- "Calls happened" assertions are easy to satisfy accidentally
+- Interaction-only tests can pass while outcomes are broken.
+- Over-mocking hides integration mistakes and config errors.
+- "Calls happened" assertions are easy to satisfy accidentally.
+- Feet in concrete; slow you down when refactoring.
 
 ---
 
@@ -285,175 +341,6 @@ inventory.Verify(i => i.Reserve(order.Id), Times.Once);
 
 Note: this passes even if `Place` returns the wrong result, the confirmation
 email is never sent, or the wrong order ID is passed in.
-
----
-
-# Prompt
-
-What is one test in your system that would still pass even if a user-visible
-feature broke?
-
-<!--
-Facilitation note: A SME story about the last regression that slipped through
-green tests can highlight what the tests were missing.
--->
-
----
-
-# Useless test anti-pattern
-
-- Asserting implementation text is mock theatre at its worst
-- It tells you nothing about behavior or correctness
-- It actively discourages refactoring, even safe refactoring
-
----
-
-# The bad test
-
-```csharp
-[Fact]
-public void FooFile_contains_exactly_these_25_lines()
-{
-    var expected = new[]
-    {
-        "using System;",
-        "",
-        "namespace Demo",
-        "{",
-        "    public class Foo",
-        "    {",
-        "        public int Add(int a, int b)",
-        "        {",
-        "            return a + b;",
-        "        }",
-        "",
-        "        public int Multiply(int a, int b)",
-        "        {",
-        "            return a * b;",
-        "        }",
-        "    }",
-        "}",
-        "",
-        "// line 19",
-        "// line 20",
-        "// line 21",
-        "// line 22",
-        "// line 23",
-        "// line 24",
-        "// line 25"
-    };
-
-    var actual = File.ReadAllLines("Foo.cs");
-
-    Assert.Equal(expected, actual);
-}
-```
-
-Observation: this test can be green while behavior is broken, and it fails on
-any safe refactor that changes formatting or structure.
-
----
-
-# Prompt
-
-What is the closest real-world version of this anti-pattern in your tests?
-
-<!--
-Facilitation note: A SME story about removing a similar test can reinforce
-improved change confidence.
--->
-
----
-
-# What can be done (outcomes)
-
-- Add at least one outcome assertion to interaction-only tests
-- Check a user-visible result (return value, state change, side effect)
-- Prefer fakes with state over mocks when outcomes are the goal
-
-```csharp
-var result = service.Place(order);
-Assert.Equal(OrderStatus.Confirmed, result.Status);
-```
-
----
-
-# What can be done (replace bad tests)
-
-- Delete tests that only assert implementation text or exact interaction scripts
-- Replace them with behavior checks (inputs, outputs, user-visible effects)
-- Use refactor breakage as a signal to ask what behavior is protected
-
-```csharp
-var total = service.Total("CA", 100m);
-Assert.Equal(108m, total);
-```
-
----
-
-# What can be done (test levels)
-
-- Promote critical flows to integration or functional tests
-- Keep mocks minimal; one assertion per test that proves behavior
-- Map gaps on the pyramid or diamond and pick one to address
-
-```csharp
-response.EnsureSuccessStatusCode();
-Assert.Equal(108m, await response.Content.ReadFromJsonAsync<decimal>());
-```
-
----
-
-# Facilitation playbook: setup
-
-- Shared whiteboard link (Miro, Hackerdraw, or similar)
-- Three columns: Observation, Example, Question
-- Link shared early; attendees keep it open
-
----
-
-# Facilitation playbook: 2-minute prompts
-
-1. Prompt read aloud and pasted on the whiteboard
-2. Two-minute timer started
-3. Everyone adds 1-2 sticky notes
-4. Notes grouped quickly by theme; pick 2 to discuss
-
----
-
-# Facilitation playbook: SME share-out
-
-- After the initial share, a SME adds context or counterexample
-- One practical heuristic: "What would you do differently next time?"
-
----
-
-# Facilitation playbook: suggested prompts
-
-- Where have you seen tests that pass but still allow a regression?
-- What does a good test double strategy look like in your team?
-- What is one test you would delete tomorrow, and why?
-
----
-
-# Facilitation playbook: if time is tight
-
-- One prompt per topic
-- Clustering skipped; go straight to 2-3 quick shares
-
----
-
-# One-sentence takeaway
-
-Green tests are only useful when they protect behavior that matters to users.
-
----
-
-# Next steps
-
-- Use this deck end-to-end or jump to the sections you need
-- Pick one test suite to audit for mock theatre
-- Replace one brittle interaction test with an outcome test
 
 ---
 
