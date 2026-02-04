@@ -66,7 +66,15 @@ src: ./pages/failure-mode-example.md
 ---
 
 ---
+src: ./pages/smells-and-failure-modes.md
+---
+
+---
 src: ./pages/what-is-chicago-and-london-style-testing.md
+---
+
+---
+src: ./pages/terminology-map.md
 ---
 
 ---
@@ -74,7 +82,47 @@ src: ./pages/two-styles-two-questions.md
 ---
 
 ---
+src: ./pages/example-domain-invoice-service.md
+---
+
+---
+src: ./pages/production-sketch.md
+---
+
+---
+src: ./pages/chicago-style-test-state-based.md
+---
+
+---
+src: ./pages/london-style-test-interaction-based.md
+---
+
+---
 src: ./pages/chicago-and-london-examples.md
+---
+
+---
+src: ./pages/comparison-signals-and-costs.md
+---
+
+---
+src: ./pages/when-chicago-is-better-default.md
+---
+
+---
+src: ./pages/when-london-is-better-default.md
+---
+
+---
+src: ./pages/hybrid-strategy-that-works.md
+---
+
+---
+src: ./pages/design-impact-of-mocks.md
+---
+
+---
+src: ./pages/refactoring-scenario.md
 ---
 
 ---
@@ -139,6 +187,14 @@ src: ./pages/approval-testing-csharp-example.md
 
 ---
 src: ./pages/keeping-docs-and-code-in-sync.md
+---
+
+---
+src: ./pages/why-this-debate-persists.md
+---
+
+---
+src: ./pages/takeaways-and-sources.md
 ---
 
 ---
