@@ -1,36 +1,3 @@
-# What is Chicago and London style testing?
-
-(I had never heard this way of describing the testing before Friday, I had to look it up ) Volunteer please to explain ?
-
-<v-clicks>
-
-## Chicago Testing
-
--
--
-
-## London Testing
-
--
--
-</v-clicks>
-
----
-
-# Two Styles Two Questions
-
-**Chicago (state-based):**
-- "After I run this, what state or result exists?"
-- Verify outputs, return values, and persisted state
-
-**London (interaction-based):**
-- "Did I collaborate with dependencies the right way?"
-- Verify calls, messages, and protocol with collaborators
-
-<small>Source: https://martinfowler.com/articles/mocksArentStubs.html</small>
-
----
-
 <div class="grid grid-cols-2 gap-6">
 <div>
 
